@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cookBookShoppers';
+  loadedType = 'recipe';
+  
+  onNavigate(type: string){
+    this.loadedType = type;
+  }
+
 }
